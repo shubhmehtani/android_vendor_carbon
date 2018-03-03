@@ -14,7 +14,7 @@ CARBON_VERSION := $(CARBON_REVISION)-$(CARBON_CODENAME)-$(CARBON_BUILDTYPE)-$(TA
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID="$(BUILD_ID)-$(shell whoami)@$(shell hostname)"
 
 # Apply it to build.prop
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_GENERIC_PROPERTIES += \
     ro.modversion=CarbonROM-$(CARBON_VERSION) \
     ro.carbon.version=$(CARBON_VERSION) \
     ro.romstats.url=https://stats.carbonrom.org \
